@@ -1,0 +1,23 @@
+<mat-tab-group>
+    <mat-tab label="URL">
+        <div class="form-group">
+            <mat-form-field (keydown.enter)="processUrl(url.value)">
+                <label>
+                    <span class="label-text">Enter URL:</span>
+                    <br />
+                    <br />
+                    <input #url matInput autocomplete="off" type="text"
+                        value="https://www.youtube.com/watch?v=6FEDrU85FLE">
+                </label>
+            </mat-form-field>
+            <button *ngIf="!inProgress; else spinner" class="form-group__button" mat-raised-button color="primary"
+                (click)="processUrl(url.value)">Fetch</button>
+            <ng-template #spinner>
+                <button class="form-group__button" mat-raised-button color="primary">
+                    <mat-spinner [diameter]="30"></mat-spinner>
+                </button>
+            </ng-template>
+        </div>
+    </mat-tab>
+    <mat-tab label="Search">to be implemented</mat-tab>
+</mat-tab-group>

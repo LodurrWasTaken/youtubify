@@ -1,0 +1,17 @@
+mat-tab-group {
+    margin-top: 30px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    &__button {
+        width: 50%;
+        margin-bottom: 30px;
+        height: 36px;
+    }
+}
+.mat-spinner {
+    margin: 0 auto;
+}

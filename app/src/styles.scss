@@ -1,0 +1,19 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html, body { height: 100%; }
+body { padding-top: 64px; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.shifted {
+    margin-left: 250px;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #fff!important;
+}
